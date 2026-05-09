@@ -1741,3 +1741,411 @@ Contact Section — FWM FIR
 	text-transform: uppercase;
 	line-height: 1.6;
 }
+
+/*********************************
+11. Mobile Responsive Styles
+*********************************/
+
+@media only screen and (max-width: 991px)
+{
+	/* --- Header --- */
+	.header_content
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		height: 80px;
+	}
+	.logo
+	{
+		left: 20px;
+		font-size: 24px;
+	}
+	.logo a
+	{
+		font-size: 24px;
+	}
+	.log_reg
+	{
+		display: none;
+	}
+	.hamburger
+	{
+		display: flex;
+		align-items: center;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.main_nav
+	{
+		display: none;
+	}
+	.menu_log_reg
+	{
+		display: block;
+	}
+
+	/* --- Home / Hero --- */
+	.home
+	{
+		height: auto;
+		min-height: 500px;
+	}
+	.home_title h1
+	{
+		font-size: 48px;
+	}
+
+	/* --- Featured Album / Tracks Section --- */
+	.featured_album
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.featured_row
+	{
+		margin-top: 30px;
+	}
+	.featured_row > .col-lg-5,
+	.featured_row > .col-lg-7,
+	.featured_row > [class*="col-"]
+	{
+		width: 100% !important;
+		max-width: 100% !important;
+		flex: 0 0 100% !important;
+	}
+	.featured_album_image
+	{
+		width: 100%;
+		height: auto;
+		margin-top: 0;
+	}
+	.featured_album_image img
+	{
+		width: 100%;
+		height: auto;
+	}
+	.featured_album_col
+	{
+		margin-top: -60px;
+		z-index: 2;
+	}
+	.featured_album_player_container
+	{
+		width: calc(100% - 30px);
+		left: 15px;
+	}
+	.featured_album_title_bar
+	{
+		height: auto;
+		padding: 20px 20px;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	.featured_album_artist
+	{
+		font-size: 22px;
+	}
+	.featured_album_link
+	{
+		margin-top: 10px;
+	}
+
+	/* --- Shows Section --- */
+	.shows
+	{
+		padding-top: 80px;
+	}
+	.shows_row
+	{
+		margin-top: 0;
+	}
+	.shows_row > [class*="col-"]
+	{
+		width: 100% !important;
+		max-width: 100% !important;
+		flex: 0 0 100% !important;
+	}
+	.shows_image
+	{
+		left: 0;
+		width: 100%;
+	}
+	.shows_list_container
+	{
+		width: 100%;
+		top: auto;
+		transform: none;
+		margin-top: -40px;
+		z-index: 2;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.shows_list li
+	{
+		height: auto;
+		padding: 12px;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+	.show_name
+	{
+		width: 100%;
+		margin-right: 0;
+	}
+	.show_location
+	{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	/* --- Artist Section — Overlap Effect --- */
+	.artist
+	{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.artist_grid
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.artist_image_col
+	{
+		order: 1;
+		width: 100%;
+	}
+	.artist_content_col
+	{
+		order: 2;
+		width: calc(100% - 30px);
+		margin: -60px auto 0 auto;
+		margin-right: 15px;
+		margin-left: 15px;
+		z-index: 2;
+	}
+	.artist_content
+	{
+		padding: 40px 24px;
+	}
+	.artist_content h1
+	{
+		font-size: 36px;
+	}
+
+	/* --- Extra Section --- */
+	.extra
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 30px;
+	}
+	.extra_content
+	{
+		height: auto;
+		padding: 40px 20px;
+		transform: none;
+	}
+	.extra_title h1
+	{
+		font-size: 36px;
+	}
+
+	/* --- Contact Section --- */
+	.fwm_contact
+	{
+		margin-top: -60px;
+		padding-bottom: 60px;
+	}
+	.fwm_contact_inner
+	{
+		padding: 40px 24px;
+		margin-left: 15px;
+		margin-right: 15px;
+		max-width: none;
+	}
+	.fwm_contact_title
+	{
+		font-size: 36px;
+	}
+
+	/* --- Footer --- */
+	.footer
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.newsletter_container
+	{
+		width: 100%;
+	}
+	.footer_lists
+	{
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.footer_list
+	{
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	/* --- SoundCloud Player --- */
+	.sc_player_container
+	{
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-top: -50px;
+		position: relative;
+		z-index: 2;
+	}
+
+	/* --- Section titles --- */
+	h1
+	{
+		font-size: 36px;
+	}
+	h2
+	{
+		font-size: 28px;
+	}
+	.section_title h1
+	{
+		font-size: 36px;
+	}
+}
+
+@media only screen and (max-width: 575px)
+{
+	/* --- Header tighter --- */
+	.header_content
+	{
+		height: 65px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.logo
+	{
+		left: 15px;
+		font-size: 20px;
+	}
+	.logo a
+	{
+		font-size: 20px;
+	}
+	.hamburger
+	{
+		right: 15px;
+	}
+
+	/* --- Home --- */
+	.home_title h1
+	{
+		font-size: 36px;
+	}
+	.home_link a
+	{
+		font-size: 18px;
+	}
+
+	/* --- Artist overlap tighter on small screens --- */
+	.artist_content_col
+	{
+		margin-top: -50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		width: calc(100% - 20px);
+	}
+	.artist_content
+	{
+		padding: 30px 20px;
+	}
+	.artist_content h1
+	{
+		font-size: 28px;
+	}
+
+	/* --- Featured album overlap --- */
+	.featured_album_col
+	{
+		margin-top: -50px;
+	}
+	.featured_album_player_container
+	{
+		width: calc(100% - 20px);
+		left: 10px;
+	}
+
+	/* --- Shows overlap --- */
+	.shows_list_container
+	{
+		margin-top: -30px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* --- Contact overlap --- */
+	.fwm_contact
+	{
+		margin-top: -50px;
+	}
+	.fwm_contact_inner
+	{
+		padding: 30px 18px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.fwm_contact_title
+	{
+		font-size: 32px;
+	}
+	.fwm_submit_row
+	{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/* --- Extra --- */
+	.extra
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.extra_title h1
+	{
+		font-size: 28px;
+	}
+
+	/* --- Footer --- */
+	.footer
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.footer_list
+	{
+		width: 100%;
+	}
+	.copyright_bar span
+	{
+		font-size: 12px;
+	}
+
+	/* --- SoundCloud Player tighter --- */
+	.sc_player_container
+	{
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: -40px;
+	}
+
+	/* --- General type scale --- */
+	h1 { font-size: 28px; }
+	h2 { font-size: 24px; }
+	h3 { font-size: 20px; }
+	.section_title h1
+	{
+		font-size: 28px;
+	}
+}
