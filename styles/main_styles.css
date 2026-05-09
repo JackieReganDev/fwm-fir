@@ -1789,8 +1789,27 @@ Contact Section — FWM FIR
 	/* --- Home / Hero --- */
 	.home
 	{
-		height: auto;
-		min-height: 500px;
+		height: 85vh;
+		min-height: 550px;
+	}
+	.home .background_image
+	{
+		height: 100%;
+		background-position: center center;
+	}
+	/* YouTube / video embeds in hero */
+	.home iframe,
+	.home video,
+	.home .home_slider_container iframe
+	{
+		width: 100%;
+		height: 100%;
+		min-height: 85vh;
+		object-fit: cover;
+	}
+	.home_container
+	{
+		padding-top: 80px;
 	}
 	.home_title h1
 	{
@@ -1818,13 +1837,20 @@ Contact Section — FWM FIR
 	.featured_album_image
 	{
 		width: 100%;
-		height: auto;
+		height: 75vh;
+		min-height: 450px;
 		margin-top: 0;
+	}
+	.featured_album_image .background_image
+	{
+		height: 100%;
+		background-position: center top;
 	}
 	.featured_album_image img
 	{
 		width: 100%;
-		height: auto;
+		height: 100%;
+		object-fit: cover;
 	}
 	.featured_album_col
 	{
@@ -1871,6 +1897,19 @@ Contact Section — FWM FIR
 	{
 		left: 0;
 		width: 100%;
+		min-height: 65vh;
+	}
+	.shows_image .background_image
+	{
+		height: 100%;
+		background-position: center center;
+	}
+	.shows_image img
+	{
+		width: 100%;
+		height: 65vh;
+		min-height: 400px;
+		object-fit: cover;
 	}
 	.shows_list_container
 	{
@@ -1940,6 +1979,15 @@ Contact Section — FWM FIR
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-bottom: 30px;
+	}
+	.extra_container
+	{
+		min-height: 70vh;
+	}
+	.extra_container .background_image
+	{
+		height: 100%;
+		background-position: center center;
 	}
 	.extra_content
 	{
@@ -2040,6 +2088,17 @@ Contact Section — FWM FIR
 	}
 
 	/* --- Home --- */
+	.home
+	{
+		height: 75vh;
+		min-height: 480px;
+	}
+	.home iframe,
+	.home video,
+	.home .home_slider_container iframe
+	{
+		min-height: 75vh;
+	}
 	.home_title h1
 	{
 		font-size: 36px;
@@ -2047,6 +2106,13 @@ Contact Section — FWM FIR
 	.home_link a
 	{
 		font-size: 18px;
+	}
+
+	/* --- Featured album image taller --- */
+	.featured_album_image
+	{
+		height: 65vh;
+		min-height: 400px;
 	}
 
 	/* --- Artist overlap tighter on small screens --- */
